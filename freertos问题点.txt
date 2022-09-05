@@ -1,0 +1,11 @@
+132页，代码段ldmia r0 !, { r4 - r11 } /* 任务栈弹出到 CPU 寄存器 */
+少了一个r14
+
+131页  2）应该是E000ED08
+
+133页  最后一段话：那么就是将 r14 的值设置为了 0xFFFFFFED 或 0xFFFFFFED（具
+体看是否使用了浮点单元）应该是 0xFFFFFFFD 或 0xFFFFFFED
+
+函数uxTaskGetSystemState描述功能有误
+
+202页 文字错误应为：时钟节拍精度！
